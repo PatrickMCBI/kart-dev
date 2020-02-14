@@ -1,4 +1,4 @@
-#!C:\Users\User 1\source\repos\Kart\Kart\kartEnv\Scripts\python.exe
+#!C:\Users\User 1\source\repos\kart-dev\Kart\Kart\kartenv\Scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":

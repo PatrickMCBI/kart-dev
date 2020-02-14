@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\User 1\source\repos\Kart\Kart\kartEnv"
+$env:VIRTUAL_ENV="C:\Users\User 1\source\repos\kart-dev\Kart\Kart\kartenv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
@@ -35,7 +35,7 @@ if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     function global:_OLD_VIRTUAL_PROMPT {""}
     copy-item function:prompt function:_OLD_VIRTUAL_PROMPT
     function global:prompt {
-        Write-Host -NoNewline -ForegroundColor Green '(kartEnv) '
+        Write-Host -NoNewline -ForegroundColor Green '(kartenv) '
         _OLD_VIRTUAL_PROMPT
     }
 }

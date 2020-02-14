@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>Kart</Name>
     <RootNamespace>Kart</RootNamespace>
-    <InterpreterId>MSBuild|kartEnv|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|kartenv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -34,6 +34,9 @@
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
@@ -93,10 +96,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="kartEnv\">
-      <Id>kartEnv</Id>
-      <Version>3.6</Version>
-      <Description>kartEnv (Python 3.6 (64-bit))</Description>
+    <Interpreter Include="kartenv\">
+      <Id>kartenv</Id>
+      <Version>3.7</Version>
+      <Description>kartenv (Python 3.7 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
